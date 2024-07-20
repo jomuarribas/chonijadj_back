@@ -8,7 +8,7 @@ const dedicatedImg = new CloudinaryStorage({
     folder: "chonijaDJ",
     allowedFormats: ["jpg", "png", "jpeg", "gif", "webp"],
     transformation: [{ width: 1920, height: 1080, crop: 'fill' }],
-    quality: 60
+    quality: "auto"
   }
 });
 const upDedicatedImg = multer({ storage: dedicatedImg });
