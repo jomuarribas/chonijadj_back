@@ -4,7 +4,7 @@ const initSocket = (server) => {
   const { Server } = require("socket.io");
   io = new Server(server, {
     cors: {
-      origin: "https://chonijapp.vercel.app",
+      origin: ["https://chonijapp.vercel.app", "https://www.chonija.com"],
       methods: ["GET", "POST"],
     },
   });
